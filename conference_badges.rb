@@ -9,9 +9,10 @@ numbers = [1,2,3,4,5,6,7]
 
 def batch_badge_creator(array)
   names = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-  array.each do |x| 
+  array.collect do |x| 
     badge_maker(x)
   end
+  return array
 end 
   
 def assign_rooms(array,array2)
