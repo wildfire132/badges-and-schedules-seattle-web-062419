@@ -8,11 +8,12 @@ names = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 numbers = [1,2,3,4,5,6,7]
 
 def batch_badge_creator(array)
-  array.collect do |name| 
-    name = "Hello, my name is #{name}."
+  array2 = []
+  array.each do |name|
+    array2 << "Hello, my name is #{name}."
   end
-  return array
-end 
+  return array2
+end
   
 def assign_rooms(array,array2)
   array.zip(array2).each_with index do |name, room|
